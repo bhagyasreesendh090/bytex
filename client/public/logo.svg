@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" width="100%" height="100%">
+  <defs>
+    <!-- Main Gradient for the X -->
+    <linearGradient id="xGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2B36FF" />
+      <stop offset="45%" stop-color="#7C2BFF" />
+      <stop offset="85%" stop-color="#EC1B8A" />
+      <stop offset="100%" stop-color="#FF2A6D" />
+    </linearGradient>
+
+    <!-- Line Gradient Left -->
+    <linearGradient id="lineLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2B36FF" />
+      <stop offset="100%" stop-color="#7C2BFF" />
+    </linearGradient>
+
+    <!-- Line Gradient Right -->
+    <linearGradient id="lineRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C2BFF" />
+      <stop offset="100%" stop-color="#EC1B8A" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <!-- "Byte" Text -->
+    <text x="0" y="78" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-style="italic" font-size="82" fill="#0D1127" letter-spacing="-2">Byte</text>
+
+    <!-- The Animated/Pixelated "X" Symbol -->
+    <g transform="translate(230, 0)">
+      <!-- Main X paths with precision geometry -->
+      <path d="M 12 85 L 48 10 L 82 10 L 46 85 Z" fill="url(#xGradient)" />
+      <path d="M 12 10 L 48 85 L 82 85 L 46 10 Z" fill="url(#xGradient)" />
+
+      <!-- Floating Pixel Particles (Top Right of X) -->
+      <rect x="76" y="2" width="10" height="10" fill="#FF2A6D" rx="1" />
+      <rect x="90" y="-6" width="9" height="9" fill="#FF2A6D" rx="1" />
+      <rect x="92" y="10" width="8" height="8" fill="#EC1B8A" rx="1" />
+      <rect x="104" y="-12" width="7" height="7" fill="#FF2A6D" rx="1" />
+      <rect x="105" y="4" width="6" height="6" fill="#EC1B8A" rx="1" />
+    </g>
+
+    <!-- "SOLUTIONS" Row with flanked lines -->
+    <g transform="translate(0, 108)">
+      <!-- Left line -->
+      <line x1="5" y1="6" x2="65" y2="6" stroke="url(#lineLeft)" stroke-width="2.5" stroke-linecap="round" />
+      <!-- Text -->
+      <text x="85" y="12" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#0D1127" letter-spacing="12">SOLUTIONS</text>
+      <!-- Right line -->
+      <line x1="290" y1="6" x2="350" y2="6" stroke="url(#lineRight)" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>
