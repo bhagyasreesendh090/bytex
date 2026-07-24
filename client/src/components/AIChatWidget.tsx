@@ -33,7 +33,7 @@ export default function AIChatWidget() {
     {
       id: "init",
       sender: "ai",
-      text: "Hi there! I'm the ByteX AI Assistant. How can I help you transform your business today?",
+      text: "Hi there! I'm the AEVIQ AI Assistant. How can I help you transform your business today?",
     },
   ]);
 
@@ -49,7 +49,7 @@ export default function AIChatWidget() {
     setTimeout(() => {
       const responseText =
         AI_RESPONSES[text] ||
-        "Thank you for your message! Our engineering team will review your requirement. Feel free to leave your contact details or email hello@bytexsolutions.com.";
+        "Thank you for your message! Our engineering team will review your requirement. Feel free to leave your contact details or email hello@aeviqsolutions.com.";
 
       const aiMsg: Message = { id: (Date.now() + 1).toString(), sender: "ai", text: responseText };
       setMessages((prev) => [...prev, aiMsg]);
@@ -97,7 +97,7 @@ export default function AIChatWidget() {
                 </div>
                 <div>
                   <div className="text-sm font-bold text-white flex items-center gap-1.5">
-                    ByteX AI Assistant
+                    AEVIQ AI Assistant
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                   </div>
                   <div className="text-[10px] font-mono text-white/40">Online · Powered by AI</div>

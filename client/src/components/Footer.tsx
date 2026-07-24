@@ -83,7 +83,7 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
           >
             <a href="/" className="inline-block mb-3">
-              <Logo className="h-10" />
+              <Logo className="h-12" />
             </a>
             <p className="text-sm font-medium gradient-text mt-1">
               Creating What's Next.
@@ -145,7 +145,7 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <p className="text-xs text-[#b0b0c0]">
-            &copy; {new Date().getFullYear()} ByteX Solutions. All rights
+            &copy; {new Date().getFullYear()} AEVIQ Solutions. All rights
             reserved.
           </p>
           <div className="flex gap-6">

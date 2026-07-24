@@ -56,12 +56,12 @@ export default function TechStackSection() {
         <div className="relative flex items-center justify-center min-h-[400px]">
           {/* Center element */}
           <motion.div
-            className="relative z-10 w-20 h-20 rounded-2xl bg-gradient-to-br from-[#7C3AED] to-[#2563EB] flex items-center justify-center shadow-2xl"
-            style={{ boxShadow: "0 0 60px rgba(124,58,237,0.3)" }}
+            className="relative z-10 w-24 h-24 rounded-2xl bg-white p-2 flex items-center justify-center shadow-2xl border border-purple-100"
+            style={{ boxShadow: "0 0 60px rgba(124,58,237,0.25)" }}
             animate={{ rotate: [0, 5, -5, 0] }}
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           >
-            <span className="text-white font-display font-bold text-xl">BX</span>
+            <img src="/logo.png" alt="AEVIQ Logo" className="w-full h-full object-contain" />
           </motion.div>
 
           {/* Orbital rings */}

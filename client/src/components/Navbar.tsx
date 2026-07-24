@@ -62,7 +62,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-[80px] flex items-center justify-between">
         {/* Crisp Official Logo */}
         <Link href="/" className="flex items-center gap-2 group py-1">
-          <Logo className="h-10 sm:h-11" />
+          <Logo className="h-11 sm:h-12" />
         </Link>
 
         {/* Desktop Nav */}

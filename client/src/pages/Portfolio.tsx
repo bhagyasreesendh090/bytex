@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, Quote, Star, ExternalLink, ChevronRight, BarChart3, Settings, Brain, ShoppingCart, Megaphone, TrendingUp } from "lucide-react";
+import { ArrowUpRight, Quote, Star, ExternalLink, ChevronRight, BarChart3, Settings, Brain, ShoppingCart, Megaphone, TrendingUp, Calendar, Activity, Building2, Globe } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -10,10 +10,59 @@ type Category = (typeof categories)[number];
 
 const projects = [
   {
+    id: 101,
+    title: "Eventmithra",
+    category: "E-Commerce" as Category,
+    client: "Eventmithra Management Services",
+    url: "https://eventmithra.in/",
+    image: "/portfolio/eventmithra.png",
+    description: "All-in-one digital event management & vendor booking platform offering end-to-end celebration planning, customized event packages, real-time availability, and automated vendor workflows.",
+    icon: Calendar,
+    gradient: "from-[#EC4899] to-[#8B5CF6]",
+    accentColor: "#EC4899",
+    results: ["+250% booking volume", "10,000+ happy clients", "Real-time vendor portal"],
+    tags: ["React", "Node.js", "Payment Gateway", "Tailwind CSS"],
+    year: "2025",
+    isLive: true,
+  },
+  {
+    id: 102,
+    title: "MVDR Lab",
+    category: "ERP" as Category,
+    client: "MVDR Diagnostic Laboratories",
+    url: "https://mvdrlab.site/",
+    image: "/portfolio/mvdrlab.png",
+    description: "Advanced medical laboratory and diagnostic portal providing online test bookings, automated patient diagnostic reports, home sample collection scheduling, and laboratory workflow management.",
+    icon: Activity,
+    gradient: "from-[#00C6FF] to-[#2563EB]",
+    accentColor: "#00C6FF",
+    results: ["99.8% report accuracy", "Fast patient turnaround", "24/7 digital portal"],
+    tags: ["React", "Node.js", "Medical LIMS", "PostgreSQL"],
+    year: "2025",
+    isLive: true,
+  },
+  {
+    id: 103,
+    title: "Sunstar Builders",
+    category: "CRM" as Category,
+    client: "Sunstar Builders & Infrastructure",
+    url: "https://sunstarbuilders.in/",
+    image: "/portfolio/sunstar.png",
+    description: "Premium real estate and construction showcase portal featuring interactive property portfolios, architectural blueprints, ongoing construction tracking, and client consultation booking engine.",
+    icon: Building2,
+    gradient: "from-[#F59E0B] to-[#7C3AED]",
+    accentColor: "#F59E0B",
+    results: ["3.5x lead conversion", "Premium architectural UI", "100+ projects featured"],
+    tags: ["Next.js", "Tailwind CSS", "3D Virtual Tours", "Lead Engine"],
+    year: "2024",
+    isLive: true,
+  },
+  {
     id: 1,
     title: "SalesForce Pro",
     category: "CRM" as Category,
     client: "TechVista Corp",
+    image: "/portfolio/salesforce.png",
     description: "Enterprise CRM platform with AI-powered lead scoring, automated pipeline management, and real-time sales analytics for a Fortune 500 technology company.",
     icon: BarChart3,
     gradient: "from-[#7C3AED] to-[#6366F1]",
@@ -21,12 +70,14 @@ const projects = [
     results: ["+34% conversion rate", "2.1x pipeline velocity", "45% less manual work"],
     tags: ["React", "Node.js", "AI/ML", "PostgreSQL"],
     year: "2025",
+    isLive: false,
   },
   {
     id: 2,
     title: "OperateX ERP",
     category: "ERP" as Category,
     client: "GlobalManufact Ltd",
+    image: "/portfolio/operatex.png",
     description: "Full-scale ERP system integrating inventory, finance, HR, and supply chain management for a multinational manufacturing company with 200+ locations.",
     icon: Settings,
     gradient: "from-[#2563EB] to-[#4F46E5]",
@@ -34,12 +85,14 @@ const projects = [
     results: ["48% process efficiency gain", "27% cost reduction", "99.9% uptime"],
     tags: ["Vue.js", "Go", "Redis", "Kubernetes"],
     year: "2025",
+    isLive: false,
   },
   {
     id: 3,
     title: "CogniBot AI",
     category: "AI" as Category,
     client: "DataFlow Inc",
+    image: "/portfolio/cognibot.png",
     description: "AI-powered business intelligence platform with predictive analytics, natural language processing, and autonomous workflow automation.",
     icon: Brain,
     gradient: "from-[#EC4899] to-[#A855F7]",
@@ -47,6 +100,7 @@ const projects = [
     results: ["12,400 tasks automated", "99.2% accuracy rate", "60% faster decisions"],
     tags: ["Python", "TensorFlow", "React", "AWS"],
     year: "2024",
+    isLive: false,
   },
   {
     id: 4,
@@ -60,6 +114,7 @@ const projects = [
     results: ["3.2x ROI improvement", "+180% traffic growth", "95% checkout completion"],
     tags: ["Next.js", "Stripe", "Algolia", "Vercel"],
     year: "2024",
+    isLive: false,
   },
   {
     id: 5,
@@ -73,6 +128,7 @@ const projects = [
     results: ["+180% organic traffic", "3.2x ad ROI", "68% lower CPA"],
     tags: ["React", "Node.js", "Redis", "GCP"],
     year: "2024",
+    isLive: false,
   },
   {
     id: 6,
@@ -86,6 +142,7 @@ const projects = [
     results: ["99.99% uptime", "40% faster reporting", "SOC 2 compliant"],
     tags: ["Angular", "Java", "PostgreSQL", "Docker"],
     year: "2023",
+    isLive: false,
   },
 ];
 
@@ -93,21 +150,21 @@ const testimonials = [
   {
     name: "Rajesh Kumar",
     role: "CTO, TechVista Corp",
-    quote: "ByteX delivered our CRM platform 3 weeks ahead of schedule. The AI-powered lead scoring alone has increased our conversion rate by 34%. Exceptional team.",
+    quote: "AEVIQ delivered our CRM platform 3 weeks ahead of schedule. The AI-powered lead scoring alone has increased our conversion rate by 34%. Exceptional team.",
     rating: 5,
     project: "SalesForce Pro",
   },
   {
     name: "Priya Sharma",
     role: "VP Operations, GlobalManufact",
-    quote: "The ERP system ByteX built has transformed how we manage operations across 200+ locations. The real-time visibility and automation capabilities are outstanding.",
+    quote: "The ERP system AEVIQ built has transformed how we manage operations across 200+ locations. The real-time visibility and automation capabilities are outstanding.",
     rating: 5,
     project: "OperateX ERP",
   },
   {
     name: "Michael Chen",
     role: "Head of AI, DataFlow Inc",
-    quote: "CogniBot AI transformed our decision-making process. What used to take days of analysis now happens in seconds. ByteX is in a league of their own.",
+    quote: "CogniBot AI transformed our decision-making process. What used to take days of analysis now happens in seconds. AEVIQ is in a league of their own.",
     rating: 5,
     project: "CogniBot AI",
   },
@@ -124,39 +181,88 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.08 } },
 };
 
-/* ─────────── Project Card Visual (CSS-based, no images) ─────────── */
+/* ─────────── Project Card Visual ─────────── */
 function ProjectVisual({ project }: { project: (typeof projects)[0] }) {
   const Icon = project.icon;
   return (
     <div
-      className="relative aspect-[16/9] overflow-hidden rounded-t-2xl"
+      className="relative aspect-[16/9] overflow-hidden rounded-t-2xl group/vis"
       style={{
-        background: `linear-gradient(135deg, ${project.accentColor}08, ${project.accentColor}15)`,
+        background: `linear-gradient(135deg, ${project.accentColor}0D, ${project.accentColor}20)`,
       }}
     >
       {/* Dot grid */}
       <div className="absolute inset-0 dot-grid opacity-60" />
 
-      {/* Gradient orb */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full blur-[60px] opacity-30"
-        style={{ background: project.accentColor }}
-      />
-
-      {/* Center icon */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <motion.div
-          className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${project.gradient} flex items-center justify-center shadow-xl`}
-          style={{ boxShadow: `0 8px 40px ${project.accentColor}30` }}
-          whileHover={{ rotate: 6, scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        >
-          <Icon size={36} className="text-white" />
-        </motion.div>
+      {/* Browser mockup header bar */}
+      <div className="absolute top-0 left-0 right-0 h-8 bg-black/20 backdrop-blur-md border-b border-white/10 px-3 flex items-center justify-between z-10">
+        <div className="flex items-center gap-1.5">
+          <div className="w-2.5 h-2.5 rounded-full bg-red-400/80" />
+          <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/80" />
+          <div className="w-2.5 h-2.5 rounded-full bg-green-400/80" />
+        </div>
+        <div className="px-3 py-0.5 rounded-md bg-white/10 text-[10px] font-mono text-gray-200 truncate max-w-[200px]">
+          {project.url ? project.url.replace("https://", "") : `${project.title.toLowerCase().replace(/\s+/g, "")}.com`}
+        </div>
+        {project.isLive ? (
+          <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[9px] font-mono font-semibold uppercase flex items-center gap-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            Live Site
+          </span>
+        ) : (
+          <div className="w-10" />
+        )}
       </div>
 
+      {/* Realistic Screenshot Image or Fallback */}
+      {project.image ? (
+        <img
+          src={project.image}
+          alt={`${project.title} Interface Mockup`}
+          className="w-full h-full object-cover object-top group-hover/vis:scale-105 transition-transform duration-700 pt-8"
+        />
+      ) : (
+        <>
+          {/* Ambient gradient orb */}
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-44 h-44 rounded-full blur-[60px] opacity-35"
+            style={{ background: project.accentColor }}
+          />
+
+          {/* Center icon */}
+          <div className="absolute inset-0 flex items-center justify-center pt-5">
+            <motion.div
+              className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${project.gradient} flex items-center justify-center shadow-xl`}
+              style={{ boxShadow: `0 8px 40px ${project.accentColor}40` }}
+              whileHover={{ rotate: 6, scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Icon size={36} className="text-white" />
+            </motion.div>
+          </div>
+        </>
+      )}
+
+      {/* Dark gradient overlay at bottom */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+
+      {/* Visit Site Overlay Link */}
+      {project.url && (
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 bg-black/40 opacity-0 group-hover/vis:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px] z-20"
+        >
+          <span className="px-5 py-2.5 rounded-xl bg-white text-[#1a1035] font-semibold text-xs inline-flex items-center gap-2 shadow-2xl transform translate-y-2 group-hover/vis:translate-y-0 transition-transform duration-300">
+            <span>Visit Live Website</span>
+            <ExternalLink size={14} className="text-[#7C3AED]" />
+          </span>
+        </a>
+      )}
+
       {/* Floating mini bars */}
-      <div className="absolute bottom-4 left-6 right-6 flex items-end gap-1 h-12 opacity-20">
+      <div className="absolute bottom-3 left-6 right-6 flex items-end gap-1 h-10 opacity-15 pointer-events-none">
         {[35, 55, 40, 70, 50, 85, 60, 90, 45, 75, 55, 80].map((h, i) => (
           <div
             key={i}
@@ -164,18 +270,6 @@ function ProjectVisual({ project }: { project: (typeof projects)[0] }) {
             style={{ height: `${h}%`, background: project.accentColor }}
           />
         ))}
-      </div>
-
-      {/* Category badge */}
-      <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-gray-100">
-        <span className="text-xs font-mono font-medium text-[#1a1035]">
-          {project.category}
-        </span>
-      </div>
-
-      {/* Year badge */}
-      <div className="absolute top-4 right-4 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-gray-100">
-        <span className="text-xs font-mono text-[#5a5a7a]">{project.year}</span>
       </div>
     </div>
   );
@@ -287,17 +381,36 @@ function ProjectsGrid() {
                   <div className="p-7">
                     <div className="flex items-start justify-between mb-3">
                       <div>
-                        <h3 className="text-xl font-display font-bold text-[#1a1035] group-hover:text-[#7C3AED] transition-colors">
-                          {project.title}
-                        </h3>
+                        {project.url ? (
+                          <a
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 group/title"
+                          >
+                            <h3 className="text-xl font-display font-bold text-[#1a1035] group-hover/title:text-[#7C3AED] transition-colors">
+                              {project.title}
+                            </h3>
+                            <ExternalLink
+                              size={16}
+                              className="text-[#7C3AED] opacity-80 group-hover/title:opacity-100 group-hover/title:translate-x-0.5 group-hover/title:-translate-y-0.5 transition-all shrink-0"
+                            />
+                          </a>
+                        ) : (
+                          <h3 className="text-xl font-display font-bold text-[#1a1035] group-hover:text-[#7C3AED] transition-colors">
+                            {project.title}
+                          </h3>
+                        )}
                         <p className="text-sm text-[#8b8ba0] mt-0.5">
                           for {project.client}
                         </p>
                       </div>
-                      <ExternalLink
-                        size={16}
-                        className="text-[#b0b0c0] group-hover:text-[#7C3AED] transition-colors shrink-0 mt-1"
-                      />
+                      {project.isLive && (
+                        <span className="px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200/60 text-emerald-700 text-[11px] font-mono font-medium flex items-center gap-1.5 shrink-0">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                          Live Website
+                        </span>
+                      )}
                     </div>
 
                     <p className="text-sm leading-relaxed text-[#5a5a7a] mb-5">
@@ -319,16 +432,30 @@ function ProjectsGrid() {
                       ))}
                     </div>
 
-                    {/* Tech tags */}
-                    <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-3 py-1 rounded-full text-xs bg-gray-50 border border-gray-100 text-[#6b6b8a]"
+                    {/* Tech tags + Live link button */}
+                    <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-gray-50">
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="px-3 py-1 rounded-full text-xs bg-gray-50 border border-gray-100 text-[#6b6b8a]"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      {project.url && (
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#7C3AED] hover:text-[#2563EB] transition-colors py-1 px-2.5 rounded-lg hover:bg-purple-50"
                         >
-                          {tag}
-                        </span>
-                      ))}
+                          <span>Visit Website</span>
+                          <ArrowUpRight size={14} />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -400,7 +527,7 @@ function TestimonialsSection() {
             What Our <span className="gradient-text">Clients Say</span>
           </h2>
           <p className="text-lg max-w-xl mx-auto text-[#5a5a7a]">
-            Real feedback from real partners who trust ByteX with their digital transformation.
+            Real feedback from real partners who trust AEVIQ with their digital transformation.
           </p>
         </motion.div>
 
@@ -472,11 +599,11 @@ function PortfolioCTA() {
             <span className="gradient-text">Next</span>
           </h2>
           <p className="text-lg max-w-xl mx-auto mb-10 text-[#5a5a7a]">
-            Let's discuss how ByteX can engineer intelligent solutions tailored to your business needs.
+            Let's discuss how AEVIQ can engineer intelligent solutions tailored to your business needs.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <motion.a
-              href="mailto:hello@bytexsolutions.com"
+              href="mailto:hello@aeviqsolutions.com"
               className="btn-primary px-8 py-4 rounded-2xl text-white font-semibold text-base inline-flex items-center gap-2"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}

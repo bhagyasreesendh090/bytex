@@ -1,6 +1,6 @@
-# ByteX Solutions — Official Website
+# AEVIQ Solutions — Official Website
 
-ByteX Solutions builds enterprise-grade CRM, ERP, AI-powered software solutions and digital experiences that help businesses automate, scale, and grow.
+AEVIQ Solutions builds enterprise-grade CRM, ERP, AI-powered software solutions and digital experiences that help businesses automate, scale, and grow.
 
 ## Features & Tech Stack
 - **Framework**: React, Vite, Wouter routing
@@ -12,7 +12,7 @@ ByteX Solutions builds enterprise-grade CRM, ERP, AI-powered software solutions 
   - Custom Magnetic Glowing Cursor
   - 3D Perspective Tilt Cards
   - Character-by-character animated text reveals & counter animations
-- **Vector Assets**: Crisp, scalable SVG ByteX Solutions logo with pixelated gradient X
+- **Vector Assets**: Crisp, scalable SVG & PNG AEVIQ Solutions logo with stylized gradient mark
 
 ## Getting Started
 ```bash

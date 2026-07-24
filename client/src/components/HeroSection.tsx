@@ -1,3 +1,4 @@
+import Logo from "./Logo";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Sparkles, Code2, BarChart3, Shield, Cpu } from "lucide-react";
 import { useRef } from "react";
@@ -244,15 +245,15 @@ export default function HeroSection() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           />
 
-          {/* Central ByteX logo mark */}
+          {/* Central AEVIQ logo mark */}
           <motion.div
-            className="relative z-10 w-24 h-24 rounded-2xl bg-gradient-to-br from-[#7C3AED] to-[#2563EB] flex items-center justify-center shadow-2xl shadow-purple-300/30"
+            className="relative z-10 w-28 h-28 rounded-2xl bg-white p-2.5 flex items-center justify-center shadow-2xl shadow-purple-500/20 border border-purple-100"
             initial={{ scale: 0, rotate: -45 }}
             animate={{ scale: 1, rotate: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: [0.23, 1, 0.32, 1] }}
             whileHover={{ rotate: 12, scale: 1.1 }}
           >
-            <span className="text-white font-display font-bold text-3xl">X</span>
+            <img src="/logo.png" alt="AEVIQ Solutions" className="w-full h-full object-contain" />
           </motion.div>
 
           {/* Floating cards orbiting */}

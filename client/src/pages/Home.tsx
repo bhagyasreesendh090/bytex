@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import ProductShowcase from "@/components/ProductShowcase";
+import FeaturedProjects from "@/components/FeaturedProjects";
 import EstimatorSection from "@/components/EstimatorSection";
 import ProcessSection from "@/components/ProcessSection";
 import TechStackSection from "@/components/TechStackSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <ServicesSection />        {/* DARK */}
       <WhyChooseSection />       {/* LIGHT */}
       <ProductShowcase />        {/* DARK */}
+      <FeaturedProjects />       {/* LIGHT — Live Client Websites */}
       <EstimatorSection />       {/* LIGHT — Interactive ROI Estimator */}
       <ProcessSection />         {/* LIGHT */}
       <TechStackSection />       {/* DARK */}

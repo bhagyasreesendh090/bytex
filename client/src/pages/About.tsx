@@ -83,7 +83,7 @@ function AboutHero() {
         >
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/70 backdrop-blur-sm border border-purple-100 shadow-sm mb-10">
             <Sparkles size={14} className="text-[#7C3AED]" />
-            <span className="text-sm text-[#7C3AED] font-medium">About ByteX</span>
+            <span className="text-sm text-[#7C3AED] font-medium">About AEVIQ</span>
           </div>
         </motion.div>
 
@@ -314,7 +314,7 @@ function JourneySection() {
   const lineHeight = useTransform(scrollYProgress, [0.1, 0.85], ["0%", "100%"]);
 
   const milestones = [
-    { year: "2024", title: "ByteX Founded", desc: "Launched with a vision to democratize enterprise tech for ambitious businesses worldwide.", color: "#7C3AED" },
+    { year: "2024", title: "AEVIQ Founded", desc: "Launched with a vision to democratize enterprise tech for ambitious businesses worldwide.", color: "#7C3AED" },
     { year: "2024", title: "First Enterprise Clients", desc: "Onboarded pioneering clients for CRM and AI automation solutions across industries.", color: "#2563EB" },
     { year: "2025", title: "Unified Platform Launch", desc: "Released the unified platform combining CRM, ERP, and AI in a single intelligent system.", color: "#EC4899" },
     { year: "2025", title: "Global Expansion", desc: "Expanded to 12+ countries with cloud-native solutions and multi-region infrastructure.", color: "#10B981" },
@@ -341,7 +341,7 @@ function JourneySection() {
             From Vision to <span className="gradient-text">Reality</span>
           </h2>
           <p className="text-lg text-[#5a5a7a] max-w-xl mx-auto">
-            Every great company starts with a single idea. Here's how ByteX evolved.
+            Every great company starts with a single idea. Here's how AEVIQ evolved.
           </p>
         </motion.div>
 
@@ -410,9 +410,9 @@ function JourneySection() {
 }
 
 /* ═══════════════════════════════════════
-   5. WHY BYTEX — Unique Bento Grid
+   5. WHY AEVIQ — Unique Bento Grid
    ═══════════════════════════════════════ */
-function WhyByteX() {
+function WhyAEVIQ() {
   const features = [
     { title: "Rapid Delivery", desc: "From concept to production in weeks, not months. Agile sprints with continuous delivery.", icon: Rocket, color: "#7C3AED", span: "md:col-span-2" },
     { title: "AI-Native", desc: "Every solution has AI baked in from day one — not bolted on as an afterthought.", icon: Sparkles, color: "#EC4899", span: "md:col-span-1" },
@@ -434,7 +434,7 @@ function WhyByteX() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-sm font-mono text-[#7C3AED] font-medium tracking-widest uppercase">Why ByteX</span>
+          <span className="text-sm font-mono text-[#7C3AED] font-medium tracking-widest uppercase">Why AEVIQ</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white mt-3 mb-4">
             What Makes Us <span className="shimmer-text">Different</span>
           </h2>
@@ -523,11 +523,11 @@ function AboutCTA() {
             <span className="gradient-text">Extraordinary?</span>
           </h2>
           <p className="text-lg text-[#5a5a7a] max-w-xl mx-auto mb-10">
-            Join the businesses transforming their operations with ByteX intelligent solutions.
+            Join the businesses transforming their operations with AEVIQ intelligent solutions.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <motion.a
-              href="mailto:hello@bytexsolutions.com"
+              href="mailto:hello@aeviqsolutions.com"
               className="btn-primary px-8 py-4 rounded-2xl text-white font-semibold text-base inline-flex items-center gap-3"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
@@ -564,7 +564,7 @@ export default function About() {
       <ByTheNumbers />       {/* DARK  — Animated stat counters */}
       <WhatWeDo />           {/* LIGHT — 6 pillar cards */}
       <JourneySection />     {/* LIGHT — Scroll-driven timeline */}
-      <WhyByteX />           {/* DARK  — Bento grid */}
+      <WhyAEVIQ />           {/* DARK  — Bento grid */}
       <AboutCTA />           {/* LIGHT — Aurora CTA */}
       <Footer />
     </div>

@@ -1,22 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
   <defs>
-    <linearGradient id="favGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2B36FF" />
-      <stop offset="50%" stop-color="#7C2BFF" />
-      <stop offset="100%" stop-color="#FF2A6D" />
+    <linearGradient id="favLegLeft" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+    <linearGradient id="favLegRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C6FF" />
+      <stop offset="100%" stop-color="#2563EB" />
     </linearGradient>
   </defs>
 
-  <rect width="120" height="120" rx="28" fill="#0D1127" />
+  <rect width="120" height="120" rx="28" fill="#0B0F19" />
 
-  <g transform="translate(16, 20)">
-    <!-- X Mark -->
-    <path d="M 12 75 L 42 15 L 70 15 L 40 75 Z" fill="url(#favGrad)" />
-    <path d="M 12 15 L 42 75 L 70 75 L 40 15 Z" fill="url(#favGrad)" />
+  <g transform="translate(14, 16)">
+    <!-- Outer Left Leg of A -->
+    <path d="M 12 78 L 48 12 L 68 12 L 32 78 Z" fill="url(#favLegLeft)" />
+    <!-- Inner Right Leg of A -->
+    <path d="M 44 42 L 86 78 L 64 78 L 32 48 Z" fill="url(#favLegRight)" />
+    <!-- Dark Inner Counter -->
+    <polygon points="36,78 48,58 56,78" fill="#0B0F19" />
 
-    <!-- Pixel Particles -->
-    <rect x="66" y="8" width="9" height="9" fill="#FF2A6D" rx="1.5" />
-    <rect x="78" y="0" width="8" height="8" fill="#FF2A6D" rx="1.5" />
-    <rect x="80" y="14" width="7" height="7" fill="#EC1B8A" rx="1.5" />
+    <!-- Pixel Blocks -->
+    <rect x="70" y="4" width="8" height="8" fill="#00C6FF" rx="1.5" />
+    <rect x="58" y="14" width="7" height="7" fill="#9333EA" rx="1.5" />
+    <rect x="76" y="17" width="6" height="6" fill="#00C6FF" rx="1.5" />
+    <rect x="54" y="28" width="11" height="11" fill="#2563EB" rx="2" />
   </g>
 </svg>

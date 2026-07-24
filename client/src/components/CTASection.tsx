@@ -83,7 +83,7 @@ export default function CTASection() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <motion.a
-              href="mailto:hello@bytexsolutions.com"
+              href="mailto:hello@aeviqsolutions.com"
               className="btn-primary px-10 py-4 rounded-2xl text-white font-semibold text-lg inline-flex items-center gap-3"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}

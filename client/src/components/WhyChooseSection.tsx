@@ -135,7 +135,7 @@ export default function WhyChooseSection() {
           className="mb-16 max-w-2xl"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 border border-purple-100 mb-6">
-            <span className="text-sm font-medium text-[#7C3AED]">Why ByteX</span>
+            <span className="text-sm font-medium text-[#7C3AED]">Why AEVIQ</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-5 leading-tight text-[#1a1035]">
             Engineering the Intelligent{" "}
