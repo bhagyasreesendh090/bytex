@@ -13,8 +13,9 @@ const footerLinks = {
   company: [
     { label: "About", href: "/about" },
     { label: "Portfolio", href: "/portfolio" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact Us", href: "/contact" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms & Conditions", href: "/terms" },
   ],
 };
 
@@ -149,15 +150,15 @@ export default function Footer() {
             reserved.
           </p>
           <div className="flex gap-6">
-            {["Privacy", "Terms", "Security"].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="text-xs text-[#b0b0c0] hover:text-[#7C3AED] transition-colors duration-200"
-              >
-                {item}
-              </a>
-            ))}
+            <a href="/privacy-policy" className="text-xs text-[#b0b0c0] hover:text-[#7C3AED] transition-colors duration-200">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="text-xs text-[#b0b0c0] hover:text-[#7C3AED] transition-colors duration-200">
+              Terms &amp; Conditions
+            </a>
+            <a href="/contact" className="text-xs text-[#b0b0c0] hover:text-[#7C3AED] transition-colors duration-200">
+              Contact
+            </a>
           </div>
         </motion.div>
       </div>
