@@ -12,6 +12,7 @@ const navLinks = [
   { label: "Solutions", href: "#services", isRoute: false },
   { label: "Process", href: "#process", isRoute: false },
   { label: "Tech", href: "#tech", isRoute: false },
+  { label: "Contact", href: "/contact", isRoute: true },
 ];
 
 export default function Navbar() {
@@ -75,19 +76,20 @@ export default function Navbar() {
         {/* CTA + Theme Toggle */}
         <div className="hidden md:flex items-center gap-3">
           {switchable && <ThemeToggle />}
-          <button
-            onClick={() => handleHashClick("#contact")}
-            className="btn-primary px-6 py-2.5 rounded-xl text-sm font-semibold inline-flex items-center gap-2 group shadow-md shadow-purple-500/10"
-          >
-            <span>Get Started</span>
-            <motion.span
-              className="inline-block"
-              animate={{ x: [0, 3, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          <Link href="/contact">
+            <button
+              className="btn-primary px-6 py-2.5 rounded-xl text-sm font-semibold inline-flex items-center gap-2 group shadow-md shadow-purple-500/10"
             >
-              →
-            </motion.span>
-          </button>
+              <span>Book Demo</span>
+              <motion.span
+                className="inline-block"
+                animate={{ x: [0, 3, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                →
+              </motion.span>
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
