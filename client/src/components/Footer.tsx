@@ -123,10 +123,10 @@ export default function Footer() {
               Connect
             </h4>
             <div className="flex gap-4">
-              <a href="https://www.facebook.com/share/p/1Bu7dcRhTA/" target="_blank" rel="noreferrer" className="flex items-center justify-center w-9 h-9 rounded-full bg-[#1a1035]/5 hover:bg-[#7C3AED]/10 text-[#6b6b8a] hover:text-[#7C3AED] transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/Aeviqlabs" target="_blank" rel="noreferrer" className="flex items-center justify-center w-9 h-9 rounded-full bg-[#1a1035]/5 hover:bg-[#7C3AED]/10 text-[#6b6b8a] hover:text-[#7C3AED] transition-colors" aria-label="Facebook">
                 <Facebook size={18} />
               </a>
-              <a href="https://www.instagram.com/p/DbOnjU7TmOJ/?igsh=eG5heG4wZnd0c2dl" target="_blank" rel="noreferrer" className="flex items-center justify-center w-9 h-9 rounded-full bg-[#1a1035]/5 hover:bg-[#7C3AED]/10 text-[#6b6b8a] hover:text-[#7C3AED] transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/aeviqlabs/" target="_blank" rel="noreferrer" className="flex items-center justify-center w-9 h-9 rounded-full bg-[#1a1035]/5 hover:bg-[#7C3AED]/10 text-[#6b6b8a] hover:text-[#7C3AED] transition-colors" aria-label="Instagram">
                 <Instagram size={18} />
               </a>
               <a href="https://wa.me/8480947297" target="_blank" rel="noreferrer" className="flex items-center justify-center w-9 h-9 rounded-full bg-[#1a1035]/5 hover:bg-[#7C3AED]/10 text-[#6b6b8a] hover:text-[#7C3AED] transition-colors" aria-label="WhatsApp">
