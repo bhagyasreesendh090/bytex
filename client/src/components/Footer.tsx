@@ -97,6 +97,12 @@ export default function Footer() {
             <p className="text-xs mt-3 leading-relaxed text-[#8b8ba0]">
               Intelligent technology solutions for forward-thinking enterprises.
             </p>
+            <div className="mt-5 space-y-1">
+              <p className="text-xs text-[#8b8ba0] font-medium tracking-wide">+91 63719 36832</p>
+              <p className="text-xs text-[#8b8ba0] font-medium tracking-wide">+91 84809 47297</p>
+              <p className="text-xs text-[#8b8ba0] font-medium tracking-wide">+91 82803 82328</p>
+              <a href="mailto:team@aeviqlabs.site" className="text-xs text-[#8b8ba0] hover:text-[#7C3AED] transition-colors block mt-2 font-medium">team@aeviqlabs.site</a>
+            </div>
           </motion.div>
 
           {/* Solutions */}

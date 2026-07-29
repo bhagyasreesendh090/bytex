@@ -237,7 +237,7 @@ export default function Contact() {
                 className="flex items-center gap-3 text-white hover:text-purple-300 transition-colors"
               >
                 <Phone size={16} className="text-purple-400" />
-                <span className="text-sm font-medium">+91 63719 36832 / +91 84809 47297</span>
+                <span className="text-sm font-medium">+91 63719 36832 / +91 84809 47297 / +91 82803 82328</span>
               </a>
               <div className="flex items-center gap-3 text-gray-400">
                 <MapPin size={16} className="text-purple-400" />
