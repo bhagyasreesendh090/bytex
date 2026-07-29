@@ -68,7 +68,7 @@ export default function FeaturedProjects() {
               Real Websites. <span className="gradient-text">Real Business Impact.</span>
             </h2>
             <p className="text-base sm:text-lg text-[#5a5a7a] mt-3 max-w-2xl">
-              Explore live platforms engineered by AEVIQ Solutions for leading industry clients.
+              Explore live platforms engineered by AEVIQ Labs for leading industry clients.
             </p>
           </div>
 

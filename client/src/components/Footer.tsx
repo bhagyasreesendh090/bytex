@@ -157,7 +157,7 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <p className="text-xs text-[#b0b0c0]">
-            &copy; {new Date().getFullYear()} AEVIQ Solutions. All rights
+            &copy; {new Date().getFullYear()} AEVIQ Labs. All rights
             reserved.
           </p>
           <div className="flex gap-6">

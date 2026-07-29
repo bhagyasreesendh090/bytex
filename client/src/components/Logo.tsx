@@ -13,7 +13,7 @@ export default function Logo({
     <div className={`relative inline-flex items-center ${className}`}>
       <img
         src="/logo.png"
-        alt="AEVIQ Solutions Logo"
+        alt="AEVIQ Labs Logo"
         className={`h-full w-auto object-contain select-none ${
           light ? "brightness-105 contrast-105" : ""
         }`}

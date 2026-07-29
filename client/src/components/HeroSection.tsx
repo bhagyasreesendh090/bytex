@@ -214,7 +214,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 1.3 }}
             className="text-lg max-w-lg leading-relaxed text-[#5a5a7a]"
           >
-            AEVIQ Solutions crafts enterprise-grade web platforms — from event management to medical portals and real estate systems — engineered to grow with your business.
+            AEVIQ Labs crafts enterprise-grade web platforms — from event management to medical portals and real estate systems — engineered to grow with your business.
           </motion.p>
 
           {/* CTA Buttons */}

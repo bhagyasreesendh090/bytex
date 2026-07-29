@@ -16,7 +16,7 @@ const sections = [
     title: "2. How We Use Your Information",
     content: [
       "We use the information collected to respond to your inquiries, schedule demo calls, provide project consultations, and deliver the services you request.",
-      "With your consent, we may use your email to send updates about AEVIQ Solutions, relevant industry insights, or service announcements. You may unsubscribe at any time.",
+      "With your consent, we may use your email to send updates about AEVIQ Labs, relevant industry insights, or service announcements. You may unsubscribe at any time.",
       "We do not sell, rent, or trade your personal information to third parties.",
     ],
   },
@@ -31,7 +31,7 @@ const sections = [
     title: "4. Data Storage and Security",
     content: [
       "All personal information you provide is stored securely using industry-standard encryption and access controls. We implement appropriate technical and organisational measures to protect your data against unauthorized access, alteration, disclosure, or destruction.",
-      "AEVIQ Solutions is headquartered in Bhubaneswar, Odisha, India. Your data may be processed and stored within India in compliance with applicable Indian data protection laws.",
+      "AEVIQ Labs is headquartered in Bhubaneswar, Odisha, India. Your data may be processed and stored within India in compliance with applicable Indian data protection laws.",
     ],
   },
   {
@@ -49,7 +49,7 @@ const sections = [
   {
     title: "7. Your Rights",
     content: [
-      "You have the right to access, correct, or request deletion of your personal information held by AEVIQ Solutions. To exercise any of these rights, please contact us at team@aeviqlabs.site.",
+      "You have the right to access, correct, or request deletion of your personal information held by AEVIQ Labs. To exercise any of these rights, please contact us at team@aeviqlabs.site.",
       "If you are based in a jurisdiction that provides additional data protection rights (such as the right to data portability), we will honor those rights to the extent applicable.",
     ],
   },
@@ -69,7 +69,7 @@ const sections = [
     title: "10. Contact Us",
     content: [
       "If you have any questions, concerns, or requests regarding this Privacy Policy, please reach out to us:",
-      "📧 Email: team@aeviqlabs.site\n📞 Phone: +91 84809 47297, +91 82803 82328\n📍 Address: Bhubaneswar, Odisha, India",
+      "📧 Email: team@aeviqlabs.site\n📞 Phone: +91 63719 36832, +91 84809 47297, +91 82803 82328\n📍 Address: Bhubaneswar, Odisha, India",
     ],
   },
 ];
@@ -103,11 +103,11 @@ export default function PrivacyPolicy() {
             </div>
             <div>
               <h1 className="text-3xl sm:text-4xl font-display font-bold text-[#1a1035]">Privacy Policy</h1>
-              <p className="text-sm text-[#8b8ba0] mt-1">Effective Date: July 24, 2025 · AEVIQ Solutions</p>
+              <p className="text-sm text-[#8b8ba0] mt-1">Effective Date: July 24, 2025 · AEVIQ Labs</p>
             </div>
           </div>
           <p className="text-base text-[#5a5a7a] max-w-2xl leading-relaxed">
-            At AEVIQ Solutions, we are committed to protecting your privacy. This Privacy Policy explains how we
+            At AEVIQ Labs, we are committed to protecting your privacy. This Privacy Policy explains how we
             collect, use, store, and safeguard your personal information when you interact with our website or services.
           </p>
         </div>

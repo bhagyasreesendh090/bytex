@@ -24,8 +24,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "+91 84809 47297, +91 82803 82328",
-    href: "tel:+918480947297",
+    value: "+91 63719 36832, +91 84809 47297, +91 82803 82328",
+    href: "tel:+916371936832",
     color: "#2563EB",
     desc: "Mon – Sat, 9 AM – 7 PM IST",
   },
@@ -122,7 +122,7 @@ export default function Contact() {
             className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-[#1a1035] leading-tight mb-5"
           >
             Get In Touch With{" "}
-            <span className="gradient-text">AEVIQ Solutions</span>
+            <span className="gradient-text">AEVIQ Labs</span>
           </motion.h1>
 
           <motion.p
@@ -233,15 +233,29 @@ export default function Contact() {
                 <span className="text-sm font-medium">team@aeviqlabs.site</span>
               </a>
               <a
-                href="tel:+918480947297"
+                href="tel:+916371936832"
                 className="flex items-center gap-3 text-white hover:text-purple-300 transition-colors"
               >
                 <Phone size={16} className="text-purple-400" />
-                <span className="text-sm font-medium">+91 84809 47297 / +91 82803 82328</span>
+                <span className="text-sm font-medium">+91 63719 36832 / +91 84809 47297</span>
               </a>
               <div className="flex items-center gap-3 text-gray-400">
                 <MapPin size={16} className="text-purple-400" />
                 <span className="text-sm">Bhubaneswar, Odisha · Pan India</span>
+              </div>
+              <div className="pt-4 mt-4 border-t border-[#2a2045]">
+                <p className="text-xs font-mono text-purple-300 uppercase tracking-widest mb-3">Social Media</p>
+                <div className="flex gap-4">
+                  <a href="https://www.facebook.com/share/p/1Bu7dcRhTA/" target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+                    Facebook
+                  </a>
+                  <a href="https://www.instagram.com/p/DbOnjU7TmOJ/?igsh=eG5heG4wZnd0c2dl" target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+                    Instagram
+                  </a>
+                  <a href="https://wa.me/8480947297" target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+                    WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -481,7 +495,7 @@ export default function Contact() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="tel:+918480947297"
+                  href="tel:+916371936832"
                   className="px-6 py-3 rounded-xl bg-white text-[#1a1035] font-semibold text-sm inline-flex items-center gap-2 hover:bg-purple-50 transition-colors"
                 >
                   <Phone size={15} />
@@ -497,7 +511,7 @@ export default function Contact() {
               </div>
             </div>
             <iframe
-              title="AEVIQ Solutions Location - Bhubaneswar, Odisha"
+              title="AEVIQ Labs Location - Bhubaneswar, Odisha"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119741.60906893555!2d85.75805329355455!3d20.30093220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
               width="100%"
               height="340"
