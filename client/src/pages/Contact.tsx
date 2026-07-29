@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
   Mail, Phone, MapPin, Globe, Clock, Send, CheckCircle, Calendar,
-  ArrowRight, MessageSquare, Sparkles
+  ArrowRight, MessageSquare, Sparkles, Facebook, Instagram, MessageCircle
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -246,14 +246,14 @@ export default function Contact() {
               <div className="pt-4 mt-4 border-t border-[#2a2045]">
                 <p className="text-xs font-mono text-purple-300 uppercase tracking-widest mb-3">Social Media</p>
                 <div className="flex gap-4">
-                  <a href="https://www.facebook.com/share/p/1Bu7dcRhTA/" target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
-                    Facebook
+                  <a href="https://www.facebook.com/share/p/1Bu7dcRhTA/" target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-white/5 hover:bg-purple-500/20 text-gray-400 hover:text-purple-300 transition-colors" aria-label="Facebook">
+                    <Facebook size={18} />
                   </a>
-                  <a href="https://www.instagram.com/p/DbOnjU7TmOJ/?igsh=eG5heG4wZnd0c2dl" target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
-                    Instagram
+                  <a href="https://www.instagram.com/p/DbOnjU7TmOJ/?igsh=eG5heG4wZnd0c2dl" target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-white/5 hover:bg-purple-500/20 text-gray-400 hover:text-purple-300 transition-colors" aria-label="Instagram">
+                    <Instagram size={18} />
                   </a>
-                  <a href="https://wa.me/8480947297" target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
-                    WhatsApp
+                  <a href="https://wa.me/8480947297" target="_blank" rel="noreferrer" className="flex items-center justify-center w-10 h-10 rounded-full bg-white/5 hover:bg-purple-500/20 text-gray-400 hover:text-purple-300 transition-colors" aria-label="WhatsApp">
+                    <MessageCircle size={18} />
                   </a>
                 </div>
               </div>

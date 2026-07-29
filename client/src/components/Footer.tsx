@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Logo from "./Logo";
+import { Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const footerLinks = {
   solutions: [
@@ -112,7 +113,27 @@ export default function Footer() {
           <FooterLinkGroup title="Company" links={footerLinks.company} delay={0.2} />
 
           {/* Connect */}
-          <FooterLinkGroup title="Connect" links={footerLinks.socials} delay={0.25} />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.25 }}
+          >
+            <h4 className="font-display text-xs font-semibold mb-5 uppercase tracking-widest text-[#7C3AED]">
+              Connect
+            </h4>
+            <div className="flex gap-4">
+              <a href="https://www.facebook.com/share/p/1Bu7dcRhTA/" target="_blank" rel="noreferrer" className="flex items-center justify-center w-9 h-9 rounded-full bg-[#1a1035]/5 hover:bg-[#7C3AED]/10 text-[#6b6b8a] hover:text-[#7C3AED] transition-colors" aria-label="Facebook">
+                <Facebook size={18} />
+              </a>
+              <a href="https://www.instagram.com/p/DbOnjU7TmOJ/?igsh=eG5heG4wZnd0c2dl" target="_blank" rel="noreferrer" className="flex items-center justify-center w-9 h-9 rounded-full bg-[#1a1035]/5 hover:bg-[#7C3AED]/10 text-[#6b6b8a] hover:text-[#7C3AED] transition-colors" aria-label="Instagram">
+                <Instagram size={18} />
+              </a>
+              <a href="https://wa.me/8480947297" target="_blank" rel="noreferrer" className="flex items-center justify-center w-9 h-9 rounded-full bg-[#1a1035]/5 hover:bg-[#7C3AED]/10 text-[#6b6b8a] hover:text-[#7C3AED] transition-colors" aria-label="WhatsApp">
+                <MessageCircle size={18} />
+              </a>
+            </div>
+          </motion.div>
 
           {/* Newsletter */}
           <motion.div
