@@ -17,6 +17,11 @@ const footerLinks = {
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms & Conditions", href: "/terms" },
   ],
+  socials: [
+    { label: "Facebook", href: "https://www.facebook.com/share/p/1Bu7dcRhTA/" },
+    { label: "Instagram", href: "https://www.instagram.com/p/DbOnjU7TmOJ/?igsh=eG5heG4wZnd0c2dl" },
+    { label: "WhatsApp", href: "https://wa.me/8480947297" },
+  ],
 };
 
 function FooterLinkGroup({
@@ -74,7 +79,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-5 gap-8">
           {/* Brand */}
           <motion.div
             className="md:col-span-1"
@@ -99,6 +104,9 @@ export default function Footer() {
 
           {/* Company */}
           <FooterLinkGroup title="Company" links={footerLinks.company} delay={0.2} />
+
+          {/* Connect */}
+          <FooterLinkGroup title="Connect" links={footerLinks.socials} delay={0.25} />
 
           {/* Newsletter */}
           <motion.div
@@ -134,6 +142,9 @@ export default function Footer() {
                 Join
               </button>
             </div>
+            <a href="/contact" className="mt-6 inline-block btn-primary px-5 py-2.5 rounded-lg text-sm font-medium text-white w-full text-center shadow-lg shadow-purple-500/20 hover:scale-105 transition-transform duration-300">
+              Now Book Your Demo
+            </a>
           </motion.div>
         </div>
 

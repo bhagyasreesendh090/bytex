@@ -89,7 +89,7 @@ const sections = [
     title: "12. Contact",
     content: [
       "For any questions about these Terms and Conditions, please contact us:",
-      "📧 Email: team@aeviqlabs.site\n📞 Phone: +91 63719 36832\n📍 Address: Bhubaneswar, Odisha, India",
+      "📧 Email: team@aeviqlabs.site\n📞 Phone: +91 84809 47297, +91 82803 82328\n📍 Address: Bhubaneswar, Odisha, India",
     ],
   },
 ];

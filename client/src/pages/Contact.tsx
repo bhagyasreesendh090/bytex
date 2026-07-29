@@ -24,8 +24,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "+91 63719 36832",
-    href: "tel:+916371936832",
+    value: "+91 84809 47297, +91 82803 82328",
+    href: "tel:+918480947297",
     color: "#2563EB",
     desc: "Mon – Sat, 9 AM – 7 PM IST",
   },
@@ -233,11 +233,11 @@ export default function Contact() {
                 <span className="text-sm font-medium">team@aeviqlabs.site</span>
               </a>
               <a
-                href="tel:+916371936832"
+                href="tel:+918480947297"
                 className="flex items-center gap-3 text-white hover:text-purple-300 transition-colors"
               >
                 <Phone size={16} className="text-purple-400" />
-                <span className="text-sm font-medium">+91 63719 36832</span>
+                <span className="text-sm font-medium">+91 84809 47297 / +91 82803 82328</span>
               </a>
               <div className="flex items-center gap-3 text-gray-400">
                 <MapPin size={16} className="text-purple-400" />
@@ -481,7 +481,7 @@ export default function Contact() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="tel:+916371936832"
+                  href="tel:+918480947297"
                   className="px-6 py-3 rounded-xl bg-white text-[#1a1035] font-semibold text-sm inline-flex items-center gap-2 hover:bg-purple-50 transition-colors"
                 >
                   <Phone size={15} />

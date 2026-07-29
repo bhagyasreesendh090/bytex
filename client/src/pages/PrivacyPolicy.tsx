@@ -69,7 +69,7 @@ const sections = [
     title: "10. Contact Us",
     content: [
       "If you have any questions, concerns, or requests regarding this Privacy Policy, please reach out to us:",
-      "📧 Email: team@aeviqlabs.site\n📞 Phone: +91 63719 36832\n📍 Address: Bhubaneswar, Odisha, India",
+      "📧 Email: team@aeviqlabs.site\n📞 Phone: +91 84809 47297, +91 82803 82328\n📍 Address: Bhubaneswar, Odisha, India",
     ],
   },
 ];
